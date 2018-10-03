@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components';
 
 const Button = (props) => (
   <StyleButton onClick={props.onClick}>
-      { 'Click Here' }
+      { props.label }
   </StyleButton>
 );
 
