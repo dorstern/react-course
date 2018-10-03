@@ -1,16 +1,20 @@
 import React from 'react';
 import Button from "./Button";
 import { ThemeProvider } from 'styled-components';
+import { Page } from "./Page";
+
 
 const theme = {
-    primary: "red",
-    scondary: "blue"
+    blue: "#4286f4",
+    background: "blue",
+    white: "#fff",
+    gray: "#f2f2f2"
 };
 
-export const App = () => (
+const App = props => (
     <ThemeProvider theme={theme}>
-        <div>
-            <Button label="Click me"/>
-        </div>
+        <Page/>
     </ThemeProvider>
 );
+
+export default App;

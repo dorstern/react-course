@@ -1,26 +1,20 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
 
-const Button = props => (
-  <Container isDisabled={true}>
-      <Label>
-          {props.label}
-      </Label>
-  </Container>
+const Button = (props) => (
+  <StyleButton onClick={props.onClick}>
+      { 'Click Here' }
+  </StyleButton>
 );
 
 export default Button;
 
-const Container = styled.div`
-    width: 100px;
-    height: 50px;
-    color: red;
-    background: ${({ isDisabled }) => isDisabled ? 'yellow' : 'red' };
-    
-    ${({ isDisabled }) => isDisabled && css` 
-        pointer-events = none;
-        opacity: 0.5;     
-    `}
+const StyleButton = styled.button`
+    height: 35px;
+    width: 200px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px;
 `;
-
-const Label = styled.h3``;
