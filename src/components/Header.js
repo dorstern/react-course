@@ -6,7 +6,7 @@ import Button from './Button';
 export const Header = (props) => (
     <Container>
         <Input/>
-        <Button/>
+        <Button label={"Add"} onClick={props.onClick}/>
     </Container>
 );
 
@@ -18,7 +18,7 @@ const Container = styled.div`
 	justify-content: center;
 	align-items: center;
 	border-bottom: 1px #eee;
-	background: ${({theme}) => theme.white};
+	background: "#fff";
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 `;
 

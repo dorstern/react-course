@@ -11,7 +11,7 @@ export const ListItem = (props) => (
 const Item = styled.div`
     width: 600px;
     height: 75px;
-    background: ${({theme}) => theme.white };
+    background: "#fff";
     margin: 15px;
     border-radius: 3px;
     padding: 10px;

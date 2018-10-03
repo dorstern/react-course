@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from "./Button";
 import Input from './Input';
-import { ThemeProvider } from 'styled-components';
 import { Page } from "./Page";
 
 export default class App extends React.Component {
@@ -22,7 +21,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <Input label={ this.state.counter }/>
+                <Input label={ "Insert input here"}/>
                 <Button onClick={ this.increase } label={"increase"}/>
                 <Button onClick={ this.decrease } label={"decrease"}/>
             </div>

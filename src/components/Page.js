@@ -4,11 +4,11 @@ import { Toolbar } from "./Toolbar";
 import { Header } from './Header';
 import { Main } from './Main';
 
-export const Page = () => (
+export const Page = (props) => (
     <Container>
         <Toolbar/>
         <Header/>
-        <Main/>
+        <Main data={props.data}/>
     </Container>
 );
 

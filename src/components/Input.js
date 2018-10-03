@@ -1,7 +1,15 @@
 import React from 'react';
+import styled, {css} from 'styled-components';
+
 
 const Input = (props) => (
-    <h3>{props.label}</h3>
+    <StyledInput
+        placeholder={props.label}
+    />
 );
 
 export default Input;
+
+const StyledInput = styled.input`
+    
+`;

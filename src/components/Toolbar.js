@@ -10,5 +10,5 @@ export const Toolbar = () => (
 const Container = styled.div`
     width: 100%;
     height: 50px;
-    background: ${({theme}) => theme.blue};
+    background: #4286f4;
 `;
