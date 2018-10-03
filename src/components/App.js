@@ -9,12 +9,22 @@ export default class App extends React.Component {
         counter: 0
     };
 
+    //increase = () => {} - is bind function and that's why we can use this
+    //increase() {} - we can not use this inside because it's another scope
+    increase = () => {
+        this.setState({counter: this.state.counter = this.state.counter + 1});
+    };
+
+    decrease = () => {
+        this.setState({counter: this.state.counter = this.state.counter - 1});
+    };
+
     render() {
         return (
             <div>
                 <Input label={ this.state.counter }/>
-                <Button onClick={ () => this.setState({counter: this.state.counter = this.state.counter + 1 }) } label={"increase"}/>
-                <Button onClick={ () => this.setState({counter: this.state.counter = this.state.counter -1 }) } label={"decrease"}/>
+                <Button onClick={ this.increase } label={"increase"}/>
+                <Button onClick={ this.decrease } label={"decrease"}/>
             </div>
         )
     }
