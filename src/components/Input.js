@@ -11,5 +11,9 @@ const Input = (props) => (
 export default Input;
 
 const StyledInput = styled.input`
-    
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
 `;

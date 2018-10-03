@@ -2,10 +2,17 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 import { ListItem } from './ListItem';
 
+const listItems = [
+    "Item 1",
+    "Item 2",
+    "Item 3",
+    "Item 4"
+];
+
 export const Main = (props) => (
     <Container>
         {
-            props.data.listItems.map( label => (<ListItem key={label} label={label}/>))
+            listItems.map( label => (<ListItem key={label} label={label}/>))
         }
     </Container>
 );
